@@ -1,0 +1,28 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffefc;
+  color: #222;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to right, #fff6e0, #fff);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: -1px;
+}
+
+.navbar .nav-link {
+  color: #000;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+.projects .card img {
+  height: 300px;
+  object-fit: cover;
+}
