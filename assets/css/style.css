@@ -1,45 +1,118 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #fffefc;
-  color: #222;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffefc;
+    color: #222;
 }
-.container{
+
+.container {
     margin: -20px;
     margin-left: 20px;
     gap: 900px;
 }
+
 .hero {
-  min-height: 100vh;
-  background: linear-gradient(to right, #fff6e0, #fff);
+    min-height: 100vh;
+    background: linear-gradient(to right, #fff6e0, #fff);
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  letter-spacing: -1px;
+    font-size: 3.5rem;
+    letter-spacing: -1px;
 }
 
-.navbar-nav{
-    gap: 45px;
+.navbar-nav {
+    gap: 70px;
     font-size: 20px;
     font-weight: bolder;
 }
+
 .navbar .nav-link {
-  color: #000;
+    color: #000;
 
 }
 
 .navbar .nav-link:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .projects .card img {
-  height: 300px;
-  object-fit: cover;
+    height: 300px;
+    object-fit: cover;
 }
 
 .resize-img {
-    width: 150px;   
-    height: auto;   
-  }
+    width: 150px;
+    height: auto;
+}
 
-  
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-text {
+    font-size: 18vw;
+    font-weight: 800;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.small-text {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    font-family: 'Pacifico', cursive;
+    font-size: 4vw;
+    color: orange;
+    pointer-events: none;
+    user-select: none;
+}
+
+.photo {
+    position: absolute;
+    width: 60vw;
+    max-width: 2500px;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    user-select: none;
+}
+
+.presented-by {
+    position: absolute;
+    right: 5vw;
+    left: 26vw;
+    top: 90%;
+    transform: translateY(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3vw;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .big-text {
+        font-size: 30vw;
+    }
+
+    .small-text {
+        font-size: 8vw;
+        top: 20%;
+        left: 40%;
+    }
+
+    .photo {
+        width: 30vw;
+        max-width: none;
+        left: 40%;
+        top: 50%;
+    }
+
+    .presented-by {
+        font-size: 3vw;
+        right: 3vw;
+    }
+}
