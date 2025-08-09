@@ -234,16 +234,18 @@ textarea {
     min-height: 100px;
 }
 
-input, textarea {
-  border: 1px solid #ccc;
-  outline: none;
-  transition: border-color 0.3s ease;
+input,
+textarea {
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
 }
 
-input:focus, textarea:focus {
-  border-color: black;
-  outline: 1.5px solid black;
-  box-shadow: none;
+input:focus,
+textarea:focus {
+    border-color: black;
+    outline: 1.5px solid black;
+    box-shadow: none;
 }
 
 #formStatus {
@@ -290,10 +292,69 @@ input:focus, textarea:focus {
 }
 
 .about-section p {
-    font-size: 18px; /* bigger text */
-    line-height: 1.8; /* more breathing space */
+    font-size: 18px;
+    line-height: 1.8;
 }
+
 .about-section strong,
 .about-section b {
-    font-size: 19px; /* make bold text slightly bigger */
+    font-size: 19px;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 140px;
+    background-color: #faf8f5;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    position: relative;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+.project-number {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+    z-index: 2;
+}
+
+.tilt-left {
+    transform: rotate(-5deg);
+}
+
+.tilt-center {
+    transform: rotate(0deg);
+}
+
+.tilt-right {
+    transform: rotate(5deg);
+}
+
+.projects-title {
+    font-size: 150px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+
 }
