@@ -52,6 +52,38 @@ body {
     justify-content: center;
 }
 
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    color: black;
+    margin: 5px 10px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    scale: 1.3;
+    color: white;
+    background-color: orange;
+    filter: drop-shadow(0 0 10px orange);
+}
+
 .big-text {
     font-size: 18vw;
     font-weight: 800;
@@ -117,7 +149,16 @@ body {
     }
 }
 
-.social-links {
+.contact-page {
+    padding-top: 100px;
+    background-color: black;
+}
+
+h1 .orange {
+    color: orange;
+}
+
+.social-links-new {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -126,25 +167,108 @@ body {
     z-index: 999;
 }
 
-.social-links a{
+.social-links-new a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    border: 0.2rem solid black;
+    border: 0.2rem solid white;
     border-radius: 50%;
-    color: black;
+    color: white;
     margin: 5px 10px;
     font-size: 1.5rem;
     transition: 0.2s linear;
     text-decoration: none;
 }
 
-.social-links a:hover{
+.social-links-new a:hover {
     scale: 1.3;
     color: white;
     background-color: orange;
     filter: drop-shadow(0 0 10px orange);
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: black;
+  outline: 1.5px solid black;
+  box-shadow: none;
+}
+
+#formStatus {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-section button {
+    width: 150px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+}
+
+.contact-section button:hover,
+.contact-section button:focus {
+    background-color: orange;
+    /* hover or focus karoth orange wenawa */
+    outline: none;
+    /* focus ekata default outline naththam karanna */
 }
