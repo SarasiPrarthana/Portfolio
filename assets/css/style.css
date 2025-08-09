@@ -268,7 +268,32 @@ input:focus, textarea:focus {
 .contact-section button:hover,
 .contact-section button:focus {
     background-color: orange;
-    /* hover or focus karoth orange wenawa */
     outline: none;
-    /* focus ekata default outline naththam karanna */
+}
+
+.about-page {
+    padding-top: 150px;
+}
+
+.main-about-img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.small-about-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-top: -60px;
+}
+
+.about-section p {
+    font-size: 18px; /* bigger text */
+    line-height: 1.8; /* more breathing space */
+}
+.about-section strong,
+.about-section b {
+    font-size: 19px; /* make bold text slightly bigger */
 }
